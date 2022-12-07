@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(171, 166, 166, 0.696);
+}
+
+.container{
+   
+   height: 500px;
+   width: 500px;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right:0;
+   margin: auto;
+   overflow: hidden;
+   border-radius: 20px;
+   box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
+   
+}
+
+.container div{
+    position: absolute;
+    border-radius: 50%;
+    animation: aurora 10s infinite;
+}
+
+@keyframes aurora{
+    60%{
+        transform: scale(1.2) translate(50px) rotate(360deg);
+    }
+}
+
+.container div:nth-child(1){
+    height: 90%;
+    width: 70%;
+    background-color: rgb(240, 245, 244);
+    left: -20%;
+    top: -10%;
+}
+
+.container div:nth-child(2){
+    height: 110%;
+    width: 70%;
+    background-color: rgb(11, 11, 232);
+    right: -5%;
+    top:-12%;
+    animation-delay: 1.2s;
+}
+
+.container div:nth-child(3){
+    height: 60%;
+    width: 66%;
+    background-color: rgb(15, 229, 233);
+    bottom: -20%;
+    left: -10%;
+    animation-delay: 2s;
+}
+
+.container div:nth-child(4){
+    height: 60%;
+    width: 85%;
+    background-color: rgb(0, 0, 0);
+    bottom: -10%;
+    right: -10%;
+    animation-delay: 0.3s;
+}
+
+.container::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+    position: absolute;
+}
+
+
+
+h2{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-shadow: 2px 2px 2px #000000; */
+    font-weight: bolder;
+    opacity: 30%;
+    font-size: 4rem;
+    position: absolute;
+     top: 45%;
+    left: 40%; 
+}
+
